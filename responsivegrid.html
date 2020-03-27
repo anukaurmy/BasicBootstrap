@@ -10,6 +10,10 @@
 
     <title >Responsive Grid</title>
     <style>
+      .container{
+        margin: 20px;
+        padding: 20px;
+      }
         @media screen and (max-width:572px){
           /*992px and up*/
           body{ background: pink;}
@@ -30,32 +34,91 @@
   </head>
   <body>
       <!--grid-->
+    
       <div class="container">
           <div class="row">
              <div class="col bg-danger"> I am a single column</div>
           </div>
       </div>
+      <br>
+      <br>
 
       <div class="container-fluid">
         <div class="row">
-           <div class="col bg-info"> I am a 1st column</div>
+           <div class="col bg-info "> I am a 1st column</div>
            <div class="col bg-warning"> I am a 2nd column</div>
            <div class="col bg-dark text-light"> I am a 2nd column</div>
            <div class="col bg-success"> I am a 2nd column</div>
         </div>
-    </div>
+        <br>
+        <br>
+    
     <!--3rd change ta hoy na(prb)-->
     <!---(-sm-), (-dm-), (-lg-) will solve the prb-->
     <div class="container-fluid">
         <div class="row">
-           <div class="col-sm-6 col-dm-3 col-lg-6 col-xl-3  bg-info"> I am a 1st column</div>
-           <div class="col-sm-6 col-dm-3 col-lg-6 col-xl-3  bg-warning"> I am a 2nd column</div>
-           <div class="col-sm-6 col-dm-3 col-lg-6 col-xl-3  bg-dark text-light"> I am a 3rd column</div>
+           <div class="col-sm-6 col-dm-1 col-lg-2 col-xl-3  bg-info"> I am a 1st column</div>
+           <div class="col-sm-3 col-dm-3 col-lg-1 col-xl-1  bg-warning "> I am a 2nd column</div>
+           <div class="col-sm-4 col-dm-3 col-lg-2 col-xl-3  bg-dark text-light "> I am a 3rd column</div>
            <div class="col-sm-6 col-dm-3 col-lg-6 col-xl-3  bg-success"> I am a 4th column</div>
         </div>
     </div>
+    <br>
+
+  <div class="container">
+     <div class="row">
+        <div class="col-sm-3 bg-primary">I am three</div>
+        <div class="col-sm-3 bg-danger">I am six</div>
+        <div class="col-sm-6 bg-warning">I am three
+            <div class="row">
+              <div class="col-sm-6 bg-primary">hey</div>
+              <div class="col-sm-6 bg-warning">you</div>
+            </div>
+        </div>
+
+      </div>
+  </div>
+  <br>
+  <br>
+  <!-- m p (0-5)-->
+  <!--mx-auto makes the thing shifted in the center-->
+  <div class="container">
+    <div class="row">
+       
+        
+           <div class="col-sm-3 bg-primary ml-3">margin left</div>
+           <div class="col-sm-3 bg-danger mb-3">Margin bottom</div>
+           <div class="col-sm-3 bg-warning mr-2">right</div>
+           <div class="col-sm-3 bg-dark mt-3">top</div>
+    </div>
+  </div>
+    <br>  
+      <div class="container">
+        <div class="row">
+           <div class="col-sm-3 bg-primary pb-2">padding bottom</div>
+           <div class="col-sm-3 bg-danger pr-4">Right</div>
+           <div class="col-sm-3 bg-warning pt-3">top</div>
+           <div class="col-sm-3 bg-info pl-12">left</div> 
+           <div class="col-sm-3 bg-info px-3">x axis</div>
+           <div class="col-sm-3 bg-warning py-4"> yaxis</div>  
+        </div>
+      </div>
+
+      <div class="container">
+       
+           <div class="bg-primary w-25 mx-auto">center</div>
+           <div class="bg-danger w-50 mx-auto ">paragraph</div>
+           <div class=" bg-warning w-75">top</div>
+           <div class=" bg-dark w-100">top</div>
+           
+             
+        
+      </div>
+      
 
 
+     
+</div>
 
   </body>
     <!-- Optional JavaScript -->
